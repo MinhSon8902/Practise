@@ -1,0 +1,63 @@
+.newsletter {
+  background-color: #258675;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    padding-top: 70px;
+    padding-inline: 362px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  .container {
+    border: 10px solid #45a090;
+    border-radius: 6px;
+    margin: 99px 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__heading {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 36px;
+    color: white;
+    margin: 0 0 14px;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6px;
+    color: #d4eee9;
+    margin: 0;
+  }
+  &__input {
+    padding-block: 16px;
+    padding-left: 60px;
+    border: 1px solid #45a090;
+    background-color: inherit;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: #94cac0;
+    min-width: 752px;
+    font-family: $primary-font;
+  }
+  &__subscribe {
+    position: relative;
+    margin-bottom: 70px;
+  }
+  &__letter {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 24px;
+    margin-right: 16px;
+  }
+}

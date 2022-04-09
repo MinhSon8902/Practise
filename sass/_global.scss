@@ -1,0 +1,89 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $bold-color;
+  padding: 14px 29px;
+  border-radius: 5px;
+  text-align: center;
+  white-space: nowrap;
+  &--primary {
+    padding: 21px 30px;
+    background-color: $secondary;
+    color: $primary-color;
+    font-size: 1.8rem;
+  }
+  &--secondary {
+    background-color: #fff1e8;
+    color: $secondary;
+    border: 2px solid $secondary;
+  }
+  &--feature {
+    padding: 15px 20px;
+    background-color: $secondary;
+    color: $primary-color;
+    font-size: 1.8rem;
+  }
+  &--courses {
+    padding: 15px 20px;
+    background-color: $secondary;
+    color: $primary-color;
+    font-size: 1.8rem;
+  }
+  &--pricing {
+    border-radius: 5px;
+    padding: 12px 115px;
+    color: $secondary;
+    border: 1px solid $secondary;
+  }
+  &--news {
+    position: absolute;
+    padding: 17px 44px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 26px;
+    color: white;
+    background: #ff9f66;
+    right: 0;
+    border-radius: 4px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin medium-md {
+  @media screen and (max-width: 739px) {
+    @content;
+  }
+}
+
+@mixin medium-lg {
+  @media (min-width: 740px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin medium-xl {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
